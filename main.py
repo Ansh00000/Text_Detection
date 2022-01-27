@@ -15,7 +15,7 @@ file_bytes = io.BytesIO(compre_img)
 
 result = requests.post(url_api,
               files={"screenshot.jpg": file_bytes},
-              data={"apikey": "c21e60defb88957"})
+              data={"apikey": "YOUR_PRODUCT_KEY"})
 
 result = (result.content.decode())
 result = json.loads(result)
